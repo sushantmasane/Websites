@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<title></title>
+
+<head>
+    <body style ="background-color: black; " class="container">
+        <div class="select-item">
+            <img src="C:\Users\sushant masane\Desktop\sushant masane\website demo\tradebeast.jpg"></img>
+            <h1 style="text-align: center; position:fixed; top: 0px;"> TRADING BOOKS </h1>
+            <img src="C:\Users\sushant masane\Desktop\book2.jpg" style="position:fixed; left: 0%; bottom: 62%; height: 30%; width: auto; display:block;" class="img-fluid" ></img>
+            <h2 style="position: fixed;"> DAILY TRADING ANALYSIS </h2>
+            <h3 style="color: white; position: fixed; right: 5%; top: 1%;" onclick="window.location.href ='registerform.html';">Register Here</h3>
+            <button style="color: white; bottom: 59%; position: fixed; left: 1%;"><i style="color: black;" onclick="window.location.href ='books.html'">Click here</i></button>
+            
+        </div>
+        <input style="position:fixed;"><i2 style="color: white; position: fixed; bottom: 40%; right: 79%;">USERNAME</i2></input>
+        <input type="password" style="bottom: 35%; right: 85%; position:fixed" ><i2 style="color: white;position: fixed; bottom: 35%; right: 79%; ">PASSWORD</i2>
+        <button style="position: fixed; bottom: 30%; left: 1;">Login</button>
+    </body>
+    <sidnav>
+        <a href="#">CONTACT</a>
+        <a href="https://www.instagram.com/sushantmasane121202/">INSTAGRAM</a>
+        <a href="https://www.facebook.com/sushant.masane2">FACEBOOK</a>
+    </sidnav>
+    <style>
+        img{
+            height: 50%; 
+            width: 30%;
+            position: fixed;
+            bottom: 30%;
+            left: 35%;
+            border: 10px;
+            border-radius: 2px;
+            border-color: whitesmoke;
+            border-image-width: 10px;
+            
+
+        }
+        sidnav {
+            position: fixed;
+            text-align: center;
+            background-color: lightgreen;
+            left: 42%;
+            background-size: 100px;
+            bottom: 2%;
+          
+
+
+
+
+        }
+        h1 {
+            color: black;
+            background-color: lightgreen;
+            width: 290px;
+            display: grid;
+        
+        }
+        
+        h2 {
+            position: absolute;
+            color: black;
+            background-color: lightskyblue;
+            width: 320px;
+            bottom: 40%;
+            display: grid;
+        
+        }
+
+        input {
+            position: absolute;
+            bottom: 40%;
+            right: 85%;
+            width: 14%;
+            display:grid;
+
+        }
+
+        @media only screen and (max-width:550px) {
+
+            .select-item {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                  "nav"
+                  "sidebar"
+                  "main"
+                  "about"
+                  "contact"
+                  "footer";
+              }
+            
+            
+
+
+        main-ul {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit,minmax(min(14rem, 100%),1fr));
+        }
+            
+        img-fluid {
+            height: 100%;
+            width: auto;
+        }
+
+    }
+
+    body{
+        display: flex;
+        flex-wrap: 200;
+
+    }
+    input{
+        display:flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    
+    
+
+
+       
+    </style>
+    <script type="text/javascript">
+        localStorage.getItem('Email')
+        localStorage.getItem('Password')
+
+        if(Username.value == stored.Username && Password.value == stored.Password){
+            alert("you are logged in");
+
+        }else{
+            alert('Error');
+        }
+    </script>
+    
+
+</head>

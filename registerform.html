@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<head>
+    <from>
+    <body style="background-color: black;">
+        <input name="First Name" type="First Name" placeholder="First Name" id="First Name" value=""><i2 style="color: aliceblue;" >First Name</i2></input>
+        <input name="Last Name" type="Last Name" placeholder="Last Name" id="Last Name" value=""><i2 style="color: aliceblue;">Last Name</i2></input>
+        <input style="position: absolute; top: 7%; left: 0.5%;"name="Phone Number" type="Phone Number" placeholder="Phone Number" id="Phone Number" value=""><i2 style="color: aliceblue; position: absolute; top: 7%; left: 11.6%;" >Phone Number</i2></input>
+        <input style="position: absolute; top: 12%; left:0.5%; " name="Email" type="Email" placeholder="Email" id="Email" value=""><i2 style="color: white; position: absolute; top: 12%; left: 11.6%;">Email</i2>
+        <input style="position: absolute; top: 17%; left: 0.5%;" name="Username" type="Username" placeholder="Username" id="Username" value=""><i2 style="color: white; position: absolute; top: 17%; left: 11.6%; ">Username</i2></input>
+        <input style="position: absolute; top: 22%; left: 0.5%;" name="Password" type="Password" placeholder="Password" id="Password" value=""><i2 style="color: white; position: absolute; top: 22%;  left: 11.6%;">Password</i2></input>
+        <button style="position: absolute; left: 0.5%; top: 25%;" onclick="store()" type="button" value="Register" >Register</button>
+        <script type="text/javascript">
+            function store(){
+                var inputLastName = document.getElementById("Last Name");
+                localStorage.setItem("Last Name", inputLastName.value);
+
+                var inputPhoneNumber = document.getElementById("Phone Number");
+                localStorage.setItem("Phone Number", inputPhoneNumber.value);
+
+                var inputFirstName = document.getElementById("First Name");
+                localStorage.setItem("First Name", inputFirstName.value);
+
+                var inputEmail = document.getElementById("Email");
+                localStorage.setItem("Email", inputEmail.value);
+
+                var inputUsername = document.getElementById("Username");
+                localStorage.setItem("Username", inputUsername.value);
+
+                var inputPassword =  document.getElementById("Password");
+                localStorage.setItem("Password", inputPassword.value);
+                
+
+
+                
+
+                
+
+
+            }
+            
+        
+            
+                
+
+           
+
+
+        </script>
+    </form>
+    </body>
+    <style>
+    </style>
+    
+</head>
